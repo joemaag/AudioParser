@@ -1,5 +1,3 @@
-== AudioParser
-
 AudioParser can load a WAV audio file, show some of it's metadata, and export the digital audio data to a text file. The values of the text file can be graphed to show the waveform of the audio.
 
 This program is more or less just an exploration into audio files. For simplicty it only takes uncompressed WAV files for now (currently working on AIFF). There is a sample WAV file included to test the program on. You can also input your own data file.
