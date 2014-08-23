@@ -2,11 +2,13 @@ AudioParser can load a WAV audio file, show some of it's metadata, and export th
 
 This program is more or less just an exploration into audio files. For simplicty it only takes uncompressed WAV files for now (currently working on AIFF). There is a sample WAV file included to test the program on. You can also input your own data file.
 
-The C source code, compiled executable, and a sample WAV file are included. To run the program on OS X or other UNIX system, drag the executable file (AudioParser) into an open Terminal window and press enter. In order for the program to read the sample WAV file (or other WAV file), the Terminal must have it’s directory changed to that of the WAV file location.
+The C source code, compiled executable, and a sample WAV file are included. To run the program on OS X or other UNIX system, the directory must first be changed in Terminal to the location of the WAV file (cd /Users/YOUR_USER_NAME/Downloads/AudioParser-master). After, enter the the file directory of the executable (/Users/YOUR_USER_NAME/Downloads/AudioParser-master/AudioParser) or drag the executable into the Terminal window.
 
 In an effort to conserve memory, there is an audio file size max limit of 500 kb. This can be changed by changing the 'MAX_FILE_SIZE_IN_BYTES' macro (the current limit is reasonable for the sample WAV file).
 
-To keep things simple, a graphing library is not used. To see the waveform graph of the audio data you can import the text file to a graphing software, such as MATLAB or gnuplot. Gnuplot is really easy to use and can easily be installed via Homebrew for OS X (http://brew.sh/). Within gnuplot, set the Teminal to an image type (png) and set the output image path for an image of the audio waveform.
+A graphing library is not used to graph the waveform. To see the waveform graph of the audio data you can import the text file into a graphing software, such as MATLAB or gnuplot. Gnuplot is really easy to use and can easily be installed via Homebrew for OS X (http://brew.sh/). Within gnuplot, set the Teminal to an image type (png) and set the output image path for an image of the audio waveform.
 
 Gnuplot waveform graph of audio.wav:
 ![gnuplot graph](audio.wavGraph.png)
+
+(Graph accuracy checked against the audio waveform in Audacity)
