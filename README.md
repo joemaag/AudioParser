@@ -8,5 +8,5 @@ In an effort to conserve memory, there is an audio file size max limit of 500 kb
 
 To keep things simple, a graphing library is not used. To see the waveform graph of the audio data you can import the text file to a graphing software, such as MATLAB or gnuplot. Gnuplot is really easy to use and can easily be installed via Homebrew for OS X (http://brew.sh/). Within gnuplot, set the Teminal to an image type (png) and set the output image path for an image of the audio waveform.
 
+Gnuplot waveform graph of audio.wav:
 ![gnuplot graph](audio.wavGraph.png)
-Gnuplot waveform graph of audio.wav
